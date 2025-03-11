@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { Task } from './components/Task.jsx';
 import { InputTask } from './components/InputTask.jsx';
 
+
+const API_URL = import.meta.env.VITE_API_URL;
 function App() {
   let taskPrueba = {
     _id: 1,
@@ -30,7 +32,7 @@ function App() {
   const addTask = async (event) => {
     event.preventDefault();
 
-    const URL = `http://localhost:8080/api/task`;
+    const URL = `${API_URL}/api/task`;
 
     if(!inputValue || !inputValue.trim()) return;
 
@@ -68,7 +70,7 @@ function App() {
 
   // funcion para traer todas las task
   const getAllTasks = async () => {
-    const URL = `http://localhost:8080/api/task`;
+    const URL = `${API_URL}/api/task`;
 
     try {
       const getData = await fetch(URL, {
@@ -105,7 +107,7 @@ function App() {
     
     console.log(tid);
 
-    const URL = `http://localhost:8080/api/task/${tid}`;
+    const URL = `${API_URL}/api/task/${tid}`;
 
     try {
       const taskRemoved = await fetch(URL, {
@@ -137,7 +139,7 @@ function App() {
   const handleComplete = async (event ,tid, currentCompleted )=>{
     event.preventDefault();
 
-    const URL = `http://localhost:8080/api/task/${tid}`;
+    const URL = `${API_URL}/api/task/${tid}`;
     try {
       const taskComplete = await fetch(URL, {
         method: 'PATCH',
