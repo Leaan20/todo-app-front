@@ -1,0 +1,95 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 200;
+  background-color: #12828F;
+}
+
+
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-container > button {
+  background-color: #535bf2;
+  border-radius: 35px;
+  padding: 12.5px 20px;
+  font-size: 18px;
+  box-shadow: 9px 7px 21px -2px rgba(0,0,0,0.81);
+-webkit-box-shadow: 9px 7px 21px -2px rgba(0,0,0,0.81);
+-moz-box-shadow: 9px 7px 21px -2px rgba(0,0,0,0.81);
+}
+
+.input-new-task{
+  font-size: 1.02em;
+  width: 25em;
+  height: 2.5em;
+}
+
+.ul-container{
+  width:600px;
+  display: inline-block;
+}
+
+
+
+.task-container{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.task-li {
+  list-style: none;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.task {
+  width: 380px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #535bf2;border-radius: 20px;
+  box-shadow: 9px 7px 21px -2px rgba(0,0,0,0.81);
+-webkit-box-shadow: 9px 7px 21px -2px rgba(0,0,0,0.81);
+-moz-box-shadow: 9px 7px 21px -2px rgba(0,0,0,0.81);
+font-size: 18px;
+}
+
+.task p {
+  font-size: 1.3em;
+  margin: 5px;
+}
+.btn-delete{
+  font-size: 1.5rem;
+}
+.btn-complete  span {
+  font-size:2rem;
+  color: #666;
+}
+
+.btn-complete:hover {
+  color: #4CAF50;
+}
