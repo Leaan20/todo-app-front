@@ -59,8 +59,8 @@ function App() {
       const data = await response.json();
       console.log({message: 'tarea agregada con exito', data});
       const newTaskData = data.task;
-      setInputValue('');
       setTasks([...tasks, newTaskData]);
+      setInputValue('');
       
 
     } catch (error) {
