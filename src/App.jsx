@@ -183,7 +183,7 @@ function App() {
   return (
     <>
       <h1>Tareas Pendientes</h1>
-      <InputTask addTask={addTask} handleInput={handleInput} value={inputValue} removeTask={removeTask} />
+      <InputTask addTask={addTask} handleInput={handleInput} inputValue={inputValue} removeTask={removeTask} />
       <div className='ul-container'>
         <ul>
           {tasks.length > 0 ? (
